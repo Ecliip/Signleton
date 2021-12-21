@@ -1,8 +1,9 @@
+
 public class Singleton {
+	static String myString = new String();
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//creamos una instancia unica de un string
 		String aString = createString("hola");
 	}
 	
@@ -10,9 +11,10 @@ public class Singleton {
 		if (myString != null && !myString.isEmpty()) {
 			return myString;
 		} else {
-			myString = new String(val);
+			myString = val;
 			return myString;
 		}
 	}
-
 }
+
+
